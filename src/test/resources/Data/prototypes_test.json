@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "location1",
+    "north": ["one", "two", "three"],
+    "south": ["two", "three"],
+    "east": ["three"],
+    "west": ["four", "five", "six", "Seven"]
+  },
+  {
+    "id": "2",
+    "name": "location2",
+    "north": ["one"],
+    "south": ["two"],
+    "east": ["three"],
+    "west": ["four"]
+  }
+]

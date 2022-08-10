@@ -1,0 +1,24 @@
+[
+  {
+    "authorName": "testName1",
+    "books": [
+      {
+        "title": "title1",
+        "inPrint": true
+      },
+      {
+        "title": "title2",
+        "inPrint": false
+      }
+      ]
+  },
+  {
+    "authorName": "testName2",
+    "books": [
+      {
+        "title": "title3",
+        "inPrint": true
+      }
+    ]
+  }
+]

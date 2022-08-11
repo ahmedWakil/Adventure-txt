@@ -33,6 +33,7 @@ public class Json {
         return objectMapper.treeToValue(node, c);
     }
 
+    @SuppressWarnings("unchecked")
     public static <A> List<A> parseJsonArray(JsonNode node, Class<A> classOnWhichArrayIsDefined) throws IOException, ClassNotFoundException {
         // TO DO: here check that node is an array
         Class<A[]> arrayClass = (Class<A[]>) Class.forName("[L" + classOnWhichArrayIsDefined.getName() + ";");

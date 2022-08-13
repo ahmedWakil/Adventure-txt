@@ -14,10 +14,10 @@ public class NextLevelEvent implements Event {
         DisplayIO.display("Would like to step through? or remain here.");
         int userResponse = DisplayIO.getUserSelectionFromList(List.of("Step through", "Remain here"));
 
-        if (userResponse == 1) {
+        if (userResponse == 0) {
             controller.setNextLevelSize();
             controller.createMap();
-            DisplayIO.display(controller.currentLocationIntroduction());
+            DisplayIO.display("You have stepped through the portal ...");
         }
     }
 }

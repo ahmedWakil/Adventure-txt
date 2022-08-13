@@ -26,11 +26,12 @@ public class GameEvent implements Event {
         DisplayIO.display("Now that we are on our way, I should tell you what exactly what I can do for you");
         helpWithCommands();
         controller.createMap();
-        DisplayIO.display(controller.currentLocationIntroduction());
 
         boolean playing = true;
         while (playing) {
+            DisplayIO.display(controller.currentLocationIntroduction());
             String command = DisplayIO.getUserCommand();
+            command = command.trim().toLowerCase();
             playing = !command.equals("quit");
             Event destinationEvent = EventFactory.getEvent(command);
 

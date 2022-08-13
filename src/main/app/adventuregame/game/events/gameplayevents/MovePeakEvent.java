@@ -49,7 +49,6 @@ public class MovePeakEvent implements Event {
             DisplayIO.display("The dark miasma in that direction makes it impossible to move in that direction");
         } else {
             controller.move(DIRECTION);
-            DisplayIO.display(controller.currentLocationIntroduction());
         }
     }
 }

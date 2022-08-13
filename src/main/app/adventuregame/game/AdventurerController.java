@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AdventurerController {
 
-    private int levelSize = 6;
+    private int levelSize = 2;
     private int level = 0;
     private Level selectedLevel = Level.CLASSIC;
     private WorldMap theMap;
@@ -90,7 +90,7 @@ public class AdventurerController {
     }
 
     private int getLevelSize(int level) {
-        return (int) (9*Math.log((1d/45d)*level)+20);
+        return (int) (9*Math.log10((1d/45d)*level)+20);
     }
 
     public String gameIntoInstructions() {
